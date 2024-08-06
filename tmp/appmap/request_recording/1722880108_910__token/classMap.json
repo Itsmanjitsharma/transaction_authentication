@@ -1,0 +1,134 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "doFilterInternal",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/app/authentication/transaction_authentication/config/JwtRequestFilter.java:33"
+                          }
+                        ],
+                        "name": "JwtRequestFilter",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "generateToken",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/app/authentication/transaction_authentication/config/JwtUtil.java:110"
+                          }
+                        ],
+                        "name": "JwtUtil",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "config",
+                    "type": "package"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "getToken",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/app/authentication/transaction_authentication/controller/AuthenticationController.java:35"
+                          }
+                        ],
+                        "name": "AuthenticationController",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "controller",
+                    "type": "package"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "getUser_Details",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/app/authentication/transaction_authentication/service/UserService.java:16"
+                          }
+                        ],
+                        "name": "UserService",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "service",
+                    "type": "package"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "findByUsernameAndPassword",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/app/authentication/transaction_authentication/repository/UserRepository.java:-1"
+                          }
+                        ],
+                        "name": "UserRepository",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "repository",
+                    "type": "package"
+                  }
+                ],
+                "name": "transaction_authentication",
+                "type": "package"
+              }
+            ],
+            "name": "authentication",
+            "type": "package"
+          }
+        ],
+        "name": "app",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /token"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select * from user_details where username = ? and password = ?"
+      },
+      {
+        "type": "query",
+        "name": "select a1_0.user_id,a1_1.id,a1_1.authority from user_roles a1_0 join roles a1_1 on a1_1.id=a1_0.role_id where a1_0.user_id=?"
+      }
+    ]
+  }
+]

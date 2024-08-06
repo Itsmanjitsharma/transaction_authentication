@@ -89,6 +89,7 @@ public class JwtUtil {
   }
 
   public boolean validateJwtToken(String authToken) {
+    logger.info("request to vaidate token");
     try {
       Jwts.parserBuilder().setSigningKey(key()).build().parse(authToken);
       return true;
@@ -106,6 +107,7 @@ public class JwtUtil {
 
 
   public String generateToken(User user) {
+    logger.info("request for logger generation");
   return Jwts.builder()
         .setSubject((user.getUsername()))
         .claim("roles", user.getAuthorities().stream()

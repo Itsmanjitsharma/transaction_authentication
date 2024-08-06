@@ -1,0 +1,6 @@
+[
+  "com/app/authentication/transaction_authentication/config/JwtUtil",
+  "com/app/authentication/transaction_authentication/controller/AuthenticationController",
+  "com/app/authentication/transaction_authentication/repository/UserRepository",
+  "com/app/authentication/transaction_authentication/service/UserService"
+]

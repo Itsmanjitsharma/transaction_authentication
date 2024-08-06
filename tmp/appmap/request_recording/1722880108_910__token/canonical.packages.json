@@ -1,0 +1,6 @@
+[
+  "com/app/authentication/transaction_authentication/config",
+  "com/app/authentication/transaction_authentication/controller",
+  "com/app/authentication/transaction_authentication/repository",
+  "com/app/authentication/transaction_authentication/service"
+]

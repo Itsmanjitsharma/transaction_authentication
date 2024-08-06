@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class TransactionStatusService {
 
-    Logger logger = LoggerFactory.getLogger(TransactionStatusService.class);
+    private static final Logger logger = LoggerFactory.getLogger(TransactionStatusService.class);
 
     @Autowired
     TransactionStatusRepository transactionStatusRepository;

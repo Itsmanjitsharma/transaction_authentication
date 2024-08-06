@@ -1,0 +1,4 @@
+[
+  "select * from user_details where username = ? and password = ?",
+  "select a1_0.user_id,a1_1.id,a1_1.authority from user_roles a1_0 join roles a1_1 on a1_1.id=a1_0.role_id where a1_0.user_id=?"
+]

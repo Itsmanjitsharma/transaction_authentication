@@ -1,0 +1,23 @@
+{
+  "name": "POST /token (200) - 23:18:28.910",
+  "app": "transaction_authentication",
+  "language": {
+    "name": "java",
+    "version": "17.0.11+7-LTS-207",
+    "engine": "Java HotSpot(TM) 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "request_recording",
+    "type": "requests"
+  },
+  "recording": {},
+  "git": {
+    "repository": "https://github.com/Itsmanjitsharma/transaction_authentication.git",
+    "branch": "main",
+    "commit": "40e6714c8ed92409492b2876597a7435a1f315aa"
+  }
+}

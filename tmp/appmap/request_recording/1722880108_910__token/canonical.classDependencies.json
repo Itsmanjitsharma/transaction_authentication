@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "POST /token",
+    "callee": "com/app"
+  },
+  {
+    "caller": "com/app",
+    "callee": "POST /token"
+  },
+  {
+    "caller": "com/app",
+    "callee": "select * from user_details where username = ? and password = ?"
+  },
+  {
+    "caller": "com/app",
+    "callee": "select a1_0.user_id,a1_1.id,a1_1.authority from user_roles a1_0 join roles a1_1 on a1_1.id=a1_0.role_id where a1_0.user_id=?"
+  }
+]
